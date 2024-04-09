@@ -24,7 +24,7 @@ Requirements:
   * Worker: 4 CPU, 32 GB RAM, SSD recommended (for archival: 8 CPUs, 64 GB RAM, SSD recommended).
 
 Do the following steps to setup TON Indexer:
-* Clone repository: `git clone --recursive --branch cpp-indexer https://github.com/kdimentionaltree/ton-indexer`.
+* Clone repository: `git clone --recursive https://github.com/toncenter/ton-indexer`.
 * Create *.env* file with command `./configure.sh`.
   * Run `./configure.sh --worker` to configure TON Index worker.
 * Adjust parameters in *.env* file (see [list of available parameters](#available-parameters)).
@@ -32,7 +32,7 @@ Do the following steps to setup TON Indexer:
 * Run stack: `docker compose up -d postgres alembic index-api`.
   * To start worker use command `docker compose up -d index-worker` after creating all services.
 
-**NOTE:** we recommend to setup indexer stack and index worker on separate servers. To install index worker to **Systemd** check this [instruction](https://github.com/kdimentionaltree/ton-index-cpp).
+**NOTE:** we recommend to setup indexer stack and index worker on separate servers. To install index worker to **Systemd** check this [instruction](https://github.com/toncenter/ton-index-worker).
 
 ### Available parameters
 
